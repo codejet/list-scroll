@@ -36,7 +36,7 @@ describe('Utils', function() {
       throttleSpy = jasmine.createSpy('throttleSpy');
       throttledFunction = app.utils.throttle(throttleSpy);
 
-      for (var i = 0, j = calls; i < j; i++) {
+      for (var i = 0; i < calls; i++) {
         throttledFunction();
       }
     });
